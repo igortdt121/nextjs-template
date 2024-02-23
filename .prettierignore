@@ -1,6 +1,0 @@
-node_modules/
-.next/
-build/
-public/
-*.code-workspace
-*.template
