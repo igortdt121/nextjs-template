@@ -1,0 +1,22 @@
+# prettier-ignore
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+        - echo -e "\n" >> .env
+        - cat env/.env.$ENV >> .env
+        - echo -e "\nENV=$ENV" >> .env
+        - echo -e "\nNEXTAUTH_COGNITO_CLIENT_SECRET=$NEXTAUTH_COGNITO_CLIENT_SECRET" >> .env
+        - echo -e "\nNEXTAUTH_SECRET=$NEXTAUTH_SECRET" >> .env
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

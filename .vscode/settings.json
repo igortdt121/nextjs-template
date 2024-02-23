@@ -1,0 +1,14 @@
+{
+  "git.autofetch": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.enableSmartCommit": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "javascript.preferences.importModuleSpecifierEnding": "minimal",
+  "[markdown]": {
+    "editor.wordWrap": "bounded"
+  }
+}
