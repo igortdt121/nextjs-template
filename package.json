@@ -87,7 +87,7 @@
     "release": "npm run package && getdotenv -- release-it",
     "start": "getdotenv -c \"next start\" -p ./ ./env -d dev",
     "test": "getdotenv -c \"mocha\" -p ./ ./env -d dev",
-    "export": "cross-env NODE_ENV=production next export"
+    "export": "cross-env NODE_ENV=dev next export"
   },
   "version": "0.1.6"
 }
